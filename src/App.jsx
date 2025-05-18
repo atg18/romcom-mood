@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useState } from 'react';
 import movies from './final_movies.json';
 import MoodSelector from './components/MoodSelector';
@@ -22,12 +23,18 @@ export default function App() {
     setCurrentMovie(rest[0]);
   };
 
+  const resetMood = () => {
+    setSelectedMood(null);
+    setRemainingMovies([]);
+    setCurrentMovie(null);
+  };
+
   return (
     <main className="min-h-screen p-6 max-w-4xl mx-auto text-center">
       {!selectedMood ? (
         <MoodSelector onSelect={handleMoodSelect} />
       ) : (
-        <MovieDisplay movie={currentMovie} onNext={handleNextMovie} />
+        <MovieDisplay movie={currentMovie} onNext={handleNextMovie} onReset={resetMood} />
       )}
     </main>
   );

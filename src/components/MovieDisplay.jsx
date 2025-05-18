@@ -1,8 +1,20 @@
 // components/MovieDisplay.jsx
 import React from 'react';
 
-export default function MovieDisplay({ movie, onNext }) {
-  if (!movie) return <p className="text-center text-lg">No more movies in this mood.</p>;
+export default function MovieDisplay({ movie, onNext, onReset }) {
+  if (!movie) {
+    return (
+      <div className="text-center space-y-4">
+        <p className="text-lg">No more movies in this mood.</p>
+        <button
+          onClick={onReset}
+          className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow"
+        >
+          Choose another mood
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 text-center">
