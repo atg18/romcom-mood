@@ -19,15 +19,15 @@ export default function MovieDisplay({ movie, onNext, onReset }) {
   return (
     <div className="space-y-6 text-center">
       <h2 className="text-3xl font-bold">Watch this!</h2>
-
-      {movie.Poster && (
+  
+      {movie["Poster URL"] && (
         <img
-          src={movie.Poster}
+          src={movie["Poster URL"]}
           alt={`${movie.Title} poster`}
           className="w-64 h-auto mx-auto rounded-xl shadow-md"
         />
       )}
-
+      
       <div className="bg-white p-6 rounded-2xl shadow-lg max-w-md mx-auto">
         <h3 className="text-xl font-semibold">{movie.Title} ({movie.Year})</h3>
         <p className="italic">Directed by {movie.Director}</p>
