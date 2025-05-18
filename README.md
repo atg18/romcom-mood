@@ -20,8 +20,8 @@ Heartbreak Recovery
 ---
 Then it shows you one movie at a time with:
 Poster
-Title, Year
-Director & Cast
+Title, Year,
+Director, Cast & 
 Summary
 
 ---
