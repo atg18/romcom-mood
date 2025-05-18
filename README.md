@@ -1,27 +1,29 @@
-Romcom Mood Recommender
+💖 Romcom Mood Recommender
 
-Ever feel like settling into a romantic comedy but can't quite pinpoint the right one for your current vibe? This little web project offers a fun and straightforward way to discover feel-good romcoms tailored to your mood.
+This is a fun and simple website that helps you find romantic comedy (romcom) movies based on your mood.
 
-Whether you're in the mood for something light and heartwarming, lost in dreamy romance, craving some chaotic laughs, or needing a comforting film to mend a broken heart — this site will suggest a movie that aligns with how you're feeling 💫
+Whether you want something light, dreamy, chaotic, or you're getting over a heartbreak, this site will recommend a movie that fits your vibe 💫
 
-🎬 How It Works
-Explore a collection of over 70 delightful romantic comedies.
-Begin by selecting a mood that resonates with you:
+What It Does:
+Shows you a selection of 70+ feel-good romcoms.
+You start by choosing a mood:
 Light & Wholesome
 Dreamy Romance
 Chaotic & Funny
 Heartbreak Recovery
-Once you choose, the site presents you with one movie at a time, showcasing:
-Its poster
-Title and release year
-Director and key cast members
-A brief, enticing summary
-If you've already enjoyed the featured film, simply click "I have watched this one" to reveal another suggestion.
-When you're ready for a different emotional landscape, just click "Choose another mood" to start the discovery process anew!
-🛠 Under the Hood
-This project is built using a modern web development stack:
 
-React: A dynamic JavaScript library employed for crafting the interactive user interface.
-Vite: A speedy tool that powers the React project during development and for building the final website.
-Tailwind CSS: A utility-first CSS framework that enables rapid and efficient styling.
-Vercel: The platform chosen to host the website, making it accessible online.
+Then it shows you one movie at a time with:
+Poster
+Title, Year
+Director & Cast
+Summary
+
+If you've already seen it, click "I have watched this one" and it will show you another.
+When you're done, you can click "Choose another mood" to start over!
+-----
+
+🛠 Tech Used
+React: A JavaScript library for building user interfaces.
+Vite: A fast development server and build tool for modern web applications.
+Tailwind CSS: A utility-first CSS framework for rapid styling.
+Vercel: A platform for hosting web applications with ease.
